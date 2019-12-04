@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+//Animation Classes 
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+//LandingRoute SCSS
+
+.logoSpinner {
+  width:100%;
+  max-width: 500px;
+  height: auto;
+  background: url('./assets/logo-w-bg.png');
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  z-index: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+  // Animation Trigger
+  -webkit-animation: rotating 15s linear infinite;
+  -moz-animation: rotating 15s linear infinite;
+  -ms-animation: rotating 15s linear infinite;
+  -o-animation: rotating 15s linear infinite;
+  animation: rotating 15s linear infinite;
+}
+
+.landingEnterBtn {
+  position:relative;
+  top: 50px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 5px;
+
+  background: repeating-linear-gradient(
+    45deg,
+    black,
+    black 10px,
+    white 10px,
+    white 20px,
+  );
+  a {
+    padding: 5px 15px;
+
+    border: 1px solid white;
+    font-stretch: semi-expanded;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-decoration: none;
+    font-weight: bolder;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+    &:hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
+}
+
+.navTotm {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  position: relative;
+  top: 20em;
+
+  .navElement {
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+    }
+    margin-bottom: 10px;
+    border: 1px solid white;
+    width: 50px;
+    height: 35px;
+    padding-top: 15px;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
+
+.contentContainer {
+  border: 1px solid white;
+  width: 90vw;
+  height: 95vh;
+  margin-left: auto;
+  margin-right: auto;
+}
