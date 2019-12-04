@@ -10,7 +10,7 @@ export default class LandingRoute extends Component {
         return (
             <div>
                 <div className='logo-container'><img className='logoSpinner rotate'src={Logo} /></div>
-                <div className='landingEnterBtn'><Link to='/'>ENTER</Link></div>
+                <div className='landingEnterBtn'><Link to='/'>SOON</Link></div>
             </div>
         )
     }
