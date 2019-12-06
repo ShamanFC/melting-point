@@ -66,7 +66,7 @@
 
 .logoSpinner {
   width:100%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   background: url('./assets/logo-w-bg.png');
   margin-left: auto;
@@ -162,7 +162,7 @@
 .contentContainer {
   border: 1px solid white;
   width: 90vw;
-  height: 91.5vh;
+  height: 83.5vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4vh;
@@ -195,7 +195,7 @@
 
   .fourtyFive {
     position: absolute;
-    bottom: 5.5vh;
+    bottom: 13.3vh;
     left: 7vw;
     width: 40px;
     -webkit-animation: rotating 5s linear infinite;
@@ -212,14 +212,15 @@
 
     
     .showImage {
-      max-width: 85%;
+      max-width: 400px;
+      width:70%;
       padding-top: 15px;
       padding-bottom: 15px;
       border-bottom: 1px solid white;
     }
 
     .infoBox {
-      width: 85%;
+      width: 70%;
       margin-left: auto;
       margin-right: auto;
       border-bottom: 1px solid white;
