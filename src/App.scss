@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'pixLCD';
+  src: url('./assets/fonts/Pixel-lcd-machine.woff2') format('woff2'),
+      url('./assets/fonts/Pixel-lcd-machine.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .App {
   text-align: center;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -153,7 +162,90 @@
 .contentContainer {
   border: 1px solid white;
   width: 90vw;
-  height: 95vh;
+  height: 91.5vh;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4vh;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  overflow: hidden;
+
+  .title {
+    background-color: black;
+    width: 30%;
+    padding-top: 13px;
+    padding-left:20px; padding-right: 20px;
+    padding-bottom: 13px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .titleBar {
+    border-bottom: 1px solid white;
+    height: 50px;
+    background: repeating-linear-gradient(
+    45deg,
+    black,
+    black 10px,
+    white 10px,
+    white 20px,
+  );
+  }
+
+  .fourtyFive {
+    position: absolute;
+    bottom: 5.5vh;
+    left: 7vw;
+    width: 40px;
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+  }
+
+  .contentBody {
+    height: 100%;  
+    overflow: scroll;
+    display: inline-block;
+
+    
+    .showImage {
+      max-width: 85%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid white;
+    }
+
+    .infoBox {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 1px solid white;
+      .textFormat {
+        font-weight: bolder;
+        font-stretch: ultra-condensed;
+      }
+      .date {
+        font-family: 'pixLCD';
+        padding-top: 10px;
+        font-weight: bold;
+        font-weight: bolder;
+        padding-bottom: 10px;
+      }
+      .date2 {
+        margin-bottom: 10px;
+      }
+    }
+
+    .lineup {
+      max-width: 85%;
+      margin-top: 20px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 90px;
+    }
+  }
 }
